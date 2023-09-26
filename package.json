@@ -1,0 +1,82 @@
+{
+  "name": "Pasta-And-Co-Software",
+  "description": "Pasta And Co Software",
+  "author": "Saviolution",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@electron/remote": "^2.0.11",
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@mui/icons-material": "^5.14.8",
+    "@mui/material": "^5.14.8",
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "axios": "^1.5.0",
+    "concurrently": "^8.2.1",
+    "cross-env": "^7.0.3",
+    "electron-is-dev": "^2.0.0",
+    "js-cookie": "^3.0.5",
+    "mdi-material-ui": "^7.7.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-hot-toast": "^2.4.1",
+    "react-icons": "^4.10.1",
+    "react-router-dom": "^6.15.0",
+    "react-scripts": "5.0.1",
+    "react-to-print": "^2.14.13",
+    "wait-on": "^7.0.1",
+    "web-vitals": "^2.1.4"
+  },
+  "main": "public/main.js",
+  "homepage": "./",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "electron:serve": "concurrently -k \"cross-env BROWSER=none npm start\" \"npm run electron:start\"",
+    "electron:build": "npm run build && electron-builder -c.extraMetadata.main=build/main.js",
+    "electron:start": "wait-on tcp:3000 && electron ."
+  },
+  "build": {
+    "extends": null,
+    "appId": "com.example.electron-cra",
+    "icon": "public/logo512.png", 
+    "files": [
+      "dist/**/*",
+      "build/**/*",
+      "node_modules/**/*",
+      "package.json"
+    ],
+    "directories": {
+      "output": "dist"
+    },
+     "extraMetadata": {
+    "main": "main.js"
+  }
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "electron": "^26.2.1",
+    "electron-builder": "^22.14.13"
+  }
+}

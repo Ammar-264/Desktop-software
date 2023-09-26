@@ -1,0 +1,129 @@
+.challan_items_table , .Voucher_items_table{
+     width: 100%;
+}
+
+.challan_items_table thead tr th:nth-child(1){
+    width: 20%;
+}
+.challan_items_table thead tr th:nth-child(2){
+width: 60%;
+}
+.challan_items_table thead tr th:nth-child(3) ,.challan_items_table thead tr th:nth-child(3){
+ width: 10%;
+}
+
+
+.Voucher_items_table thead tr th:nth-child(1){
+    width: 20%;
+}
+.Voucher_items_table thead tr th:nth-child(2){
+width: 40%;
+}
+.Voucher_items_table thead tr th:nth-child(3){
+width: 20%;
+}
+.Voucher_items_table thead tr th:nth-child(4) ,.Voucher_items_table thead tr th:nth-child(5){
+ width: 10%;
+}
+
+.bill_items_table {
+    width: 100%;
+}
+
+.bill_items_table thead tr th:nth-child(1){
+    width: 15%;
+}
+.bill_items_table thead tr th:nth-child(2){
+width: 10%;
+}
+.bill_items_table thead tr th:nth-child(3){
+width: 40%;
+}
+.bill_items_table thead tr th:nth-child(4){
+width: 15%;
+}
+.bill_items_table thead tr th:nth-child(5) ,.bill_items_table thead tr th:nth-child(6){
+ width: 10%;
+}
+
+.pagination_block{
+    border: 1px solid rgba(0, 0, 0, .2) ;
+    border-width: 0px 1px 1px 1px !important;
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+}
+
+.wages_tables table{
+    height:  max-content;
+}
+
+
+.ledger_table {
+    width: 100%;
+}
+.ledger_table table{
+    width: 100%;
+}
+
+.ledger_table table thead tr th:nth-child(1){
+    width: 10%;
+}
+.ledger_table table thead tr th:nth-child(2){
+ width: 31%;
+}
+.ledger_table table thead tr th:nth-child(3){
+width: 15%;
+}
+.ledger_table table thead tr th:nth-child(4){
+    width: 13%;
+    
+}
+.ledger_table table thead tr th:nth-child(5){
+    width: 13%;
+    
+}
+.ledger_table table thead tr th:nth-child(6){
+    width: 13%;
+    
+}
+.ledger_table table thead tr th:nth-child(7){
+    width: 5%;
+    font-size: 20px !important;
+    color: red !important;
+    text-align: center;
+    cursor: pointer;
+}
+.ledger_table table tbody tr td:nth-child(7){
+    font-size: 20px !important;
+    color: red !important;
+    text-align: center;
+    cursor: pointer;
+}
+
+.login_form{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 30px 15px;
+    border-radius: 8px;
+}
+
+.users_table table{
+    width: 100%;
+}
+
+.users_table table tr th:nth-child(1){
+    width: 15%;
+}
+.users_table table tr th:nth-child(2){
+    width: 35%;
+}
+.users_table table tr th:nth-child(3){
+    width: 35%;
+
+}
+.users_table table tr th:nth-child(4){
+    width: 15%;
+}
